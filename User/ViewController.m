@@ -21,13 +21,13 @@
     [super viewDidLoad];
     
     
-    Person *person = [[Person alloc]init];
-    person.name = @"小明";
-    person.age = 23;
-    person.gender = GenderMan;
-    person.isAdult = YES;
+    Person *person    = [[Person alloc]init];
+    person.name       = @"小明";
+    person.age        = 23;
+    person.gender     = GenderMan;
+    person.isAdult    = YES;
     person.labelArray = @[@"阳光",@"萌新",@"正太"];
-    person.car.color = [UIColor blackColor];
+    person.car.color  = [UIColor blackColor];
     
     // 归档Person对象
     [NSKeyedArchiver archiveRootObject:person toFile:[Person archivePath]];

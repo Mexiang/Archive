@@ -31,12 +31,12 @@
         // 解档，赋值
         // 这里的Key需与归档时的Key一致
         
-        self.name = [aDecoder decodeObjectForKey:@"name"];
-        self.gender = [aDecoder decodeIntegerForKey:@"gender"];
-        self.age = [aDecoder decodeIntegerForKey:@"age"];
-        self.isAdult = [aDecoder decodeBoolForKey:@"isAdult"];
+        self.name       = [aDecoder decodeObjectForKey:@"name"];
+        self.gender     = [aDecoder decodeIntegerForKey:@"gender"];
+        self.age        = [aDecoder decodeIntegerForKey:@"age"];
+        self.isAdult    = [aDecoder decodeBoolForKey:@"isAdult"];
         self.labelArray = [aDecoder decodeObjectForKey:@"labelArray"];
-        self.car = [aDecoder decodeObjectForKey:@"car"];
+        self.car        = [aDecoder decodeObjectForKey:@"car"];
     }
     return self;
 }
